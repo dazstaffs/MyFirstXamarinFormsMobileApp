@@ -17,16 +17,17 @@ namespace AwesomeApp
         public MainPage()
         {
             InitializeComponent();
-            var layout = new StackLayout { Padding = new Thickness(5, 10) };
-            var label = new Label { Text = "\"You have the most beautiful eyes...\"", TextColor = Color.FromHex("#7F00FF"), FontSize = 30 };
-            var button = new Button { Text = "Give Me a New Chat Up Line", TextColor = Color.FromHex("#000000"), FontSize = 20 };
-            layout.Children.Add(label);
-            layout.Children.Add(button);
-            this.Content = layout;
-
-            //chatUpLines[0] = "Heaven must be missing an angel.";
-            //chatUpLines[1] = "I may not be Fred Flintstone, but I can make your bed rock.";
-            //chatUpLines[2] = "God damn, your mother must be proud.";
         }
+
+        private async void btnYesClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ArrangeMOT());
+        }
+
+        private void btnNoClicked(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

@@ -6,7 +6,11 @@
              mc:Ignorable="d"
              x:Class="AwesomeApp.MainPage">
 
-    <StackLayout>
+    <StackLayout Padding="0,20,0,0">
+        <Label Text="Your car is due an MOT. Do you still own the following vehicle:" FontSize="Large" FontAttributes="Italic" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+        <Label Text="Vauxhal Astra, LC19 UTL" FontSize="Large" FontAttributes="Italic" HorizontalTextAlignment="Center" />
+        <Button Text="Yes, This is my Car" Font="Large" BorderWidth="1" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Clicked="btnYesClicked" />
+        <Button Text="No" Font="Large" BorderWidth="1" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Clicked="btnNoClicked" />
     </StackLayout>
 
 </ContentPage>
